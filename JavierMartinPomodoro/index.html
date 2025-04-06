@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temporizador Pomodoro</h1>
+        <p>Haz clic en "Iniciar" para comenzar tu sesión de trabajo.</p>
+
+        <!-- Temporizador visual -->
+        <div id="temporizador">25:00</div>
+
+        <!-- Botones para iniciar, detener y resetear el temporizador -->
+        <button id="iniciar" onclick="iniciarTemporizador()">Iniciar</button>
+        <button id="detener" onclick="detenerTemporizador()">Detener</button>
+        <button id="resetear" onclick="resetearTemporizador()">Resetear</button>
+
+        <!-- Mensaje cuando es hora de tomar un descanso -->
+        <div id="mensaje"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
